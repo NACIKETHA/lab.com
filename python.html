@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>python</title>
+
+    </head>
+    <body>
+        <h1>Python Practical Program</h1>
+        <h2>1.QUESTION</h2>
+        <p>Create a calculator program using Python.</p>
+        <h2>Aim:</h2>
+        <p>To Create a calculator program using Python.</p>
+        <h2>Algorithm:</h2>
+        <p>
+            1. Start the program by defining four functions: add(), subtract(), multiply(), and divide(). Each function takes two arguments, x and y. </p>
+        <p>
+            2. Define the add() function. It adds the two numbers and returns the result.</p> 
+        <p>
+            3.  Define the subtract() function. It subtracts the second number from the first and returns the result.</p>
+        <p>
+            4.  Define the multiply() function. It multiplies the two numbers and returns the result.</p>
+        <p>
+            5.  Define the divide() function. It divides the first number by the second number. If the second number is zero, it returns an error message. Otherwise, it returns the result.</p>
+        <p>
+            6.  Define the calculator() function. This is the main function of the program. </p>
+        <p>
+            7. In the calculator() function, print a welcome message and prompt the user to select an operation.</p>
+            <p>     
+                8.  Get the user's choice and check if it is a valid choice (1, 2, 3, or 4). </p>
+            <p>
+                9. If the choice is valid, get two numbers from the user. </p>
+            <p>
+                10. If the user entered a valid choice, perform the selected operation on the two numbers.
+            </p>
+            <p>
+            
+                11.  If the user entered an invalid choice, print an error message.
+            </p>
+            <p>
+                12.  Call the calculator() function to start the program.</p>
+            <h2>Program:</h2>
+            <p>
+                def add(x, y):<br>
+    return x + y<br>
+<br>
+def subtProgram:ract(x, y):<br>
+    return x - y<br>
+<br>
+def multiply(x, y):<br>
+    return x * y<br>
+<br>
+def divide(x, y):<br>
+    if y != 0:<br>
+        return x / y<br>
+    else:<br>
+        return "Error: Cannot divide by zero"<br>
+<br>
+def calculator():<br>
+    print("Simple Calculator")<br>
+    print("Select operation:")<br>
+    print("1. Add")<br>
+    print("2. Subtract")<br>
+    print("3. Multiply")<br>
+    print("4. Divide")<br>
+<br>
+    choice = input("Enter choice (1/2/3/4): ")<br>
+<br>
+    if choice in ['1', '2', '3', '4']:<br>
+        num1 = float(input("Enter first number: "))<br>
+        num2 = float(input("Enter second number: "))<br>
+<br>
+        if choice == '1':<br>
+            print(num1, "+", num2, "=", add(num1, num2))<br>
+        elif choice == '2':<br>
+            print(num1, "-", num2, "=", subtract(num1, num2))<br>
+        elif choice == '3':<br>
+            print(num1, "*", num2, "=", multiply(num1, num2))<br>
+        elif choice == '4':<br>
+            print(num1, "/", num2, "=", divide(num1, num2))<br>
+    else:<br>
+        print("Invalid Input")<br>
+<br>
+<br>
+    calculator()
+
+ 
+
+            </p>
+            <h2>Output:</h2>
+            <p>
+                Simple Calculator<br>
+                Select operation:<br>
+                1. Add<br>
+                2. Subtract<br>
+                3. Multiply<br>
+                4. Divide<br>
+                Enter choice (1/2/3/4): 1<br>
+                Enter first number: 2<br>
+                Enter second number: 2<br>
+                2.0 + 2.0 = 4.0<br>
+            </p>
+            <hr>
+<h2>2.Question:</h2>
+<p>Create Python program using different String functions.</p>            
+<h2>Aim:</h2>
+<p>To create Python program using different String functions.</p>
+<h2>Algorithm:</h2>
+<p>
+1.Initialize the main function:<br>
+   - Define a function named `main`.<br>
+<br>
+2. Declare a sample string:<br>
+   - Create a string variable `sample_string` with the value "Hello, World!".<br>
+<br>
+3. String Length:<br>
+   - Print the length of the string using the `len` function.<br>
+<br>
+4.Convert to Uppercase:
+   - Print the uppercase version of the string using the `upper` method.<br>
+<br>
+5. Convert to Lowercase:<br>
+   - Print the lowercase version of the string using the `lower` method.<br>
+<br>
+6. Count occurrences of a substring:<br>
+   - Print the count of occurrences of the letter 'l' in the string using the `count` method.<br>
+<br>
+7. Find the index of a substring:<br>
+   - Print the index of the substring 'World' using the `find` method.<br>
+<br>
+8. Replace substrings:<br>
+   - Replace the substring 'World' with 'Python' and print the modified string.<br>
+<br>
+9. Split the string into a list:<br>
+   - Split the string into a list of words using the `split` method with ',' as the delimiter and print the list.<br>
+<br>
+    10. Join the list into a string:<br>
+    - Join the list of words into a string using the `join` method with space as the separator and print the joined string.<br>
+<br>
+11. Check if the string starts with a substring:<br>
+    - Print whether the string starts with the substring 'Hello' using the `startswith` method.<br>
+<br>
+12. Check if the string ends with a substring:<br>
+    - Print whether the string ends with the substring 'World!' using the `endswith` method.<br>
+<br>
+    13. Check if the script is run as the main program:<br>
+    - Use the condition `if __name__ == "__main__":` to check if the script is run as the main program.<br>
+<br>
+14. Invoke the main function:<br>
+    - If the script is run as the main program, call the `main` function.<br>
+<h2>Program:</h2>
+
+
+</p>
+<p>
+    def main():<br>
+        # Define a sample string<br>
+        sample_string = "Hello, World!"<br>
+    <br>
+    # String length<br>
+    print("Length of the string:", len(sample_string))<br>
+        <br>
+            # Convert to uppercase<br>
+            print("Uppercase:", sample_string.upper())<br>
+        <br>
+            # Convert to lowercase<br>
+            print("Lowercase:", sample_string.lower())<br>
+        <br>
+            # Count occurrences of a substring<br>
+            print("Occurrences of 'l':", sample_string.count('l'))<br>
+        <br>
+            # Find the index of a substring<br>
+            print("Index of 'World':", sample_string.find('World'))<br>
+        <br>
+            # Replace substrings<br>
+            replaced_string = sample_string.replace('World', 'Python')<br>
+            print("After replacement:", replaced_string)<br>
+        <br>
+            # Split the string into a list<br>
+            words = sample_string.split(',')<br>
+            print("Split into words:", words)<br>
+        <br>
+            # Join the list into a string<br>
+            joined_string = ' '.join(words)<br>
+            print("Joined string:", joined_string)<br>
+        <br>
+            # Check if the string starts with a substring<br>
+            print("Starts with 'Hello':", sample_string.startswith('Hello'))<br>
+        <br>
+            # Check if the string ends with a substring<br>
+        print("Ends with 'World!':", sample_string.endswith('World!'))<br>
+        
+        <br>
+            main()<br>
+        
+        </p>
+        <h2>Output:</h2>
+        Length of the string: 13<br>
+Uppercase: HELLO, WORLD!<br>
+Lowercase: hello, world!<br>
+Occurrences of 'l': 3<br>
+Index of 'World': 7<br>
+After replacement: Hello, Python!<br>
+Split into words: ['Hello', ' World!']<br>
+Joined string: Hello  World!<br>
+Starts with 'Hello': True<br>
+Ends with 'World!': True<br>
+
+    <hr>
+    <h2>3.Question:</h2>
+    <p>Implement Selection sort algorithm using Python Program.</p>
+    <h2>Aim:</h2> 
+    <p>To Implement selection Sort Algorithm Using Python Program.</p>
+    <h2>Algorithm:</h2>
+    <p>
+
+        1. The selection sort algorithm sorts an array by repeatedly finding the minimum element from the unsorted part of the array and putting it in the correct position in the sorted part of the array.<br>
+    
+        2. The algorithm starts by initializing a variable min_index to the first index of the array. <br>
+    
+        3. It then loops through the rest of the array (range(i + 1, n)) and checks if the current element is smaller than the element at min_index. <br>
+    
+        4. If a smaller element is found, min_index is updated to the index of the smaller element. <br>
+    
+        5. After checking all the elements in the current iteration, the algorithm swaps the elements at i and min_index. <br>
+    
+        6. This process is repeated for all the elements in the array until it is sorted.
+    
+    
+    </p>
+    <h2>Program:</h2>
+    def selection_sort(arr):<br>
+    n = len(arr)<br>
+<br>
+    for i in range(n):<br>
+        min_index = i<br>
+        for j in range(i + 1, n):<br>
+            if arr[j] < arr[min_index]:<br>
+                min_index = j<br>
+        arr[i], arr[min_index] = arr[min_index], arr[i]<br>
+<br>
+    return arr<br>
+<br>
+arr = [64, 25, 12, 22, 11]<br>
+sorted_arr = selection_sort(arr)<br>
+print("Sorted array:", sorted_arr)<br>
+<h2>Output:</h2>
+<p>sorted array: [11,12,22,25,64]</p>
+ <hr>  
+ <h2>4.Question</h2>
+
+ 
+ <p>Implement stack Operation using Python Program
+</p>
+<h2>Aim:</h2>
+<p>To Implement stack Operation using Python Program</p>
+<h2>Algorithm:</h2>
+<p>
+
+    1. Initialize an empty stack as a list. <br>
+
+    2. Define functions push(), pop(), peek(), is_empty(), and display_stack() to perform the corresponding stack operations.<br> 
+
+    3. In the main() function: a. Display a menu of stack operations. b. Get user input and perform the corresponding stack operation based on the user's choice. c. Repeat steps a and b until the user quits.<br>
+    4.  Call main() if the program is run as a script.<br>
+</p>
+<h2>Program:</h2>
+<p>
+    <pre>
+class Stack:
+def __init__(self):
+    self.items = []
+
+def is_empty(self):
+    return len(self.items) == 0
+
+def push(self, item):
+    self.items.append(item)
+
+def pop(self):
+    if not self.is_empty():
+        return self.items.pop()
+    else:
+        raise IndexError("pop from an empty stack")
+
+def peek(self):
+    if not self.is_empty():
+        return self.items[-1]
+    else:
+        raise IndexError("peek from an empty stack")
+
+def size(self):
+    return len(self.items)
+
+# Example usage with user input:
+stack = Stack()
+
+while True:
+print("\nStack:", stack.items)
+print("1. Push")
+print("2. Pop")
+print("3. Peek")
+print("4. Size")
+print("5. Quit")
+
+choice = input("Enter your choice (1-5): ")
+
+if choice == '1':
+    value = input("Enter the value to push: ")
+    stack.push(value)
+elif choice == '2':
+    try:
+        popped_value = stack.pop()
+        print("Popped element:", popped_value)
+    except IndexError as e:
+        print(e)
+elif choice == '3':
+    try:
+        peeked_value = stack.peek()
+        print("Peeked element:", peeked_value)
+    except IndexError as e:
+        print(e)
+elif choice == '4':
+    print("Stack size:", stack.size())
+elif choice == '5':
+    break
+else:
+    print("Invalid choice. Please enter a valid option.")
+    </pre>
+</p>
+<h2>Output:</h2>
+Stack: [],<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 1<br>
+Enter the value to push: 125<br>
+<br>
+Stack: ['125']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 1<br>
+Enter the value to push: 55<br>
+<br>
+Stack: ['125', '55']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 1<br>
+Enter the value to push: 85<br>
+<br>
+Stack: ['125', '55', '85']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 2<br>
+Popped element: 85<br>
+
+Stack: ['125', '55']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 3<br>
+Peeked element: 55<br>
+
+Stack: ['125', '55']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 4<br>
+Stack size: 2<br>
+
+Stack: ['125', '55']<br>
+1. Push<br>
+2. Pop<br>
+3. Peek<br>
+4. Size<br>
+5. Quit<br>
+Enter your choice (1-5): 5<br>
+
+</body>
+
+</html>
